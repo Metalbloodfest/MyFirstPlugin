@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace MyFirstPlugin.Cheats
 {
-    public class PrestigeModifier : Cheat
+    public class ItemLootModifier : Cheat
     {
         public override void Update()
         {
-            if (!GameManagerUtil.HasGameManager || !Settings.isPrestigeModifier)
+            if (!GameManagerUtil.HasGameManager || !Settings.isCurrenciesModifier)
             {
                 return;
             }
@@ -29,7 +29,18 @@ namespace MyFirstPlugin.Cheats
                         {
                             if (entity != null)
                             {
-                                entity._loot.Prestige = 1 * (int)Settings.prestigeModifierFloat;
+                                foreach (ItemDropData itemDropData in entity._loot.PossibleItems)
+                                {
+                                    if (itemDropData != null)
+                                    {
+                                        float itemMod = Settings.itemLootModifierFloat;
+                                        itemDropData.QuantityMin = 1 * (int)itemMod;
+                                        itemDropData.QuantityMax = 1 * (int)itemMod;
+
+                                        float chanceMod = itemMod / 2 < 1f ? 1f : itemMod / 2;
+                                        itemDropData.Chance = 1 * (int)chanceMod;
+                                    }
+                                }
                             }
                         }
                     }

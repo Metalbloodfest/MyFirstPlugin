@@ -28,6 +28,8 @@ namespace MyFirstPlugin
             {
                 Cheat.Cheats.Add(new ExperienceModifier());
                 Cheat.Cheats.Add(new PrestigeModifier());
+                Cheat.Cheats.Add(new CurrenciesModifier());
+                Cheat.Cheats.Add(new ItemLootModifier());
             }
 
             private void Update()

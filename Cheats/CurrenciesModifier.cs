@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace MyFirstPlugin.Cheats
 {
-    public class PrestigeModifier : Cheat
+    public class CurrenciesModifier : Cheat
     {
         public override void Update()
         {
-            if (!GameManagerUtil.HasGameManager || !Settings.isPrestigeModifier)
+            if (!GameManagerUtil.HasGameManager || !Settings.isCurrenciesModifier)
             {
                 return;
             }
@@ -29,7 +29,13 @@ namespace MyFirstPlugin.Cheats
                         {
                             if (entity != null)
                             {
-                                entity._loot.Prestige = 1 * (int)Settings.prestigeModifierFloat;
+                                entity._loot.Currencies.MinorSoulstones = 1 * (int)Settings.minorSoulstonesModifierFloat;
+                                
+                                /*entity._loot.Currencies.CorruptedSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
+                                entity._loot.Currencies.VileSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
+                                entity._loot.Currencies.WickedSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
+                                entity._loot.Currencies.HatefulSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
+                                entity._loot.Currencies.RogueSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;*/
                             }
                         }
                     }

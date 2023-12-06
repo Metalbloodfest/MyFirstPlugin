@@ -19,7 +19,17 @@ namespace MyFirstPlugin.Utilities
         public static bool isPrestigeModifier = false;
 
         public static float prestigeModifierFloat = 1;
-    }
 
-    
+        public static bool isCurrenciesModifier = false;
+
+        public static float minorSoulstonesModifierFloat = 1;
+
+        // Corrupted, Vile, Wicked, Hateful, and Rogue Soulstones
+        public static float bossSoulstonesModifierFloat = 1;
+
+        public static bool isItemLootModifier = false;
+
+        public static float itemLootModifierFloat = 1;
+
+    }
 }

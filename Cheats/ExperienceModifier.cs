@@ -29,8 +29,6 @@ namespace MyFirstPlugin.Cheats
                         //Plugin.log.LogInfo(playerFound._stats.MultiplicativeStats.ExperienceModifier);
                     }
                 }
-
-
             }
         }
     }
