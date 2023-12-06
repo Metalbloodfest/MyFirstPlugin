@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace MyFirstPlugin.Utilities
 {
-        public static class Settings
-        {
-            //GUI
-            public static bool isMenuVisible = false;
+    public static class Settings
+    {
+        //GUI
+        public static bool isMenuVisible = false;
 
-            //player Cheats
-            public static bool isExpModifier = false;
+        //player Cheats
+        public static bool isExpModifier = false;
 
-            public static float experienceModifierFloat = 1;
-        }
+        public static float experienceModifierFloat = 1;
+
+        public static bool isPrestigeModifier = false;
+
+        public static float prestigeModifierFloat = 1;
+    }
 
     
 }

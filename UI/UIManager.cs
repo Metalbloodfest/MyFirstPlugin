@@ -27,6 +27,10 @@ namespace MyFirstPlugin.UI
             Settings.isExpModifier = UIHelper.Button("Experience Modifier: ", Settings.isExpModifier);
             Settings.experienceModifierFloat = UIHelper.Slider(Settings.experienceModifierFloat, 1, 20);
             UIHelper.Label("Current XP modifier is:  ", Settings.experienceModifierFloat);
+            Settings.isPrestigeModifier = UIHelper.Button("Prestige XP Modifer: ", Settings.isPrestigeModifier);
+            Settings.prestigeModifierFloat = (float)Math.Round(UIHelper.Slider(Settings.prestigeModifierFloat, 1, 1000), 0);
+            UIHelper.Label("Current prestige XP modifier is:  ", Settings.prestigeModifierFloat);
+
         }
 
 

@@ -27,6 +27,7 @@ namespace MyFirstPlugin
             public void Awake()
             {
                 Cheat.Cheats.Add(new ExperienceModifier());
+                Cheat.Cheats.Add(new PrestigeModifier());
             }
 
             private void Update()

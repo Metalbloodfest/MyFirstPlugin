@@ -115,6 +115,7 @@
   <ItemGroup>
     <Compile Include="Cheat.cs" />
     <Compile Include="Cheats\ExperienceModifier.cs" />
+    <Compile Include="Cheats\PrestigeModifier.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
