@@ -31,11 +31,12 @@ namespace MyFirstPlugin.Cheats
                             {
                                 entity._loot.Currencies.MinorSoulstones = 1 * (int)Settings.minorSoulstonesModifierFloat;
                                 
-                                /*entity._loot.Currencies.CorruptedSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
-                                entity._loot.Currencies.VileSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
-                                entity._loot.Currencies.WickedSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
-                                entity._loot.Currencies.HatefulSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
-                                entity._loot.Currencies.RogueSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;*/
+                                //BossAddresses filter needed
+                                //entity._loot.Currencies.CorruptedSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
+                                //entity._loot.Currencies.VileSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
+                                //entity._loot.Currencies.WickedSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
+                                //entity._loot.Currencies.HatefulSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
+                                //entity._loot.Currencies.RogueSoulstones = 1 * (int)Settings.bossSoulstonesModifierFloat;
                             }
                         }
                     }

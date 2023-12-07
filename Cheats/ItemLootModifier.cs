@@ -37,7 +37,7 @@ namespace MyFirstPlugin.Cheats
                                         itemDropData.QuantityMin = 1 * (int)itemMod;
                                         itemDropData.QuantityMax = 1 * (int)itemMod;
 
-                                        float chanceMod = itemMod / 2 < 1f ? 1f : itemMod / 2;
+                                        float chanceMod = itemMod / 4 < 1 ? 1 : itemMod / 4;
                                         itemDropData.Chance = 1 * (int)chanceMod;
                                     }
                                 }
